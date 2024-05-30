@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript practice 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>I'm new here.</h1>
+    </header>
+
+    <main>
+        <div>
+            <p id="text-content">Coding creates a set of instructions for computers to follow.
+                These instructions determine what actions a computer can and cannot take.
+                Coding allows programmers to build programs, such as websites and apps.
+                Computer programmers can also tell computers how to process data in better, faster ways.
+            </p>
+        </div>
+        <button onclick="makeBig()">Make big</button>
+        <button onclick="returnSmall()">Return Small</button>
+    </main>
+    <script>
+        function makeBig() {
+            document.getElementById('text-content').style.fontSize = '50px';
+        }
+        function returnSmall() {
+            document.getElementById('text-content').style.fontSize = '20px';
+        }
+    </script>
+</body>
+
+</html>
